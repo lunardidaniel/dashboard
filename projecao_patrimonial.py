@@ -23,7 +23,7 @@ patrimonio_inicial = st.sidebar.number_input(
 aportes_mensais = st.sidebar.number_input(
     "Aportes Mensais (R\$)",
     min_value=0.0,
-    value=5_000.0,
+    value=0.0,
     step=100.0,
     format="%.2f",
     help="Valor que o cliente pretende aportar mensalmente."
@@ -39,7 +39,7 @@ taxa_dividendos_anual = st.sidebar.slider(
 taxa_rentabilidade_anual = st.sidebar.slider(
     "Taxa de Rentabilidade Anual Esperada (%)",
     min_value=0.0,
-    max_value=39.0,
+    max_value=30.0,
     value=8.0,
     step=0.1,
     help="Taxa de retorno anual líquida esperada dos investimentos."
