@@ -15,7 +15,7 @@ st.sidebar.header("Defina as Premissas")
 patrimonio_inicial = st.sidebar.number_input(
     "Patrimônio Inicial (R\$)",
     min_value=0.0,
-    value=1_500_000.0,
+    value=0.0,
     step=10_000.0,
     format="%.2f",
     help="O valor atual do patrimônio do cliente."
