@@ -16,7 +16,7 @@ patrimonio_inicial = st.sidebar.number_input(
     "Patrimônio Inicial (R\$)",
     min_value=0.0,
     value=0.0,
-    step=10_000.0,
+    step=1000.0,
     format="%.2f",
     help="O valor atual do patrimônio do cliente."
 )
@@ -31,7 +31,7 @@ aportes_mensais = st.sidebar.number_input(
 taxa_dividendos_anual = st.sidebar.slider(
      "Percentual de Dividendos Anual Esperado (%)",
     min_value=0.0,
-    max_value=100.0, # Um maximo razoavel para dividendos anuais
+    max_value=30.0, # Um maximo razoavel para dividendos anuais
     value=2.0,
     step=0.1,
     help="Percentual do patrimônio que será distribuído como dividendos anualmente."
@@ -39,7 +39,7 @@ taxa_dividendos_anual = st.sidebar.slider(
 taxa_rentabilidade_anual = st.sidebar.slider(
     "Taxa de Rentabilidade Anual Esperada (%)",
     min_value=0.0,
-    max_value=100.0,
+    max_value=39.0,
     value=8.0,
     step=0.1,
     help="Taxa de retorno anual líquida esperada dos investimentos."
@@ -47,7 +47,7 @@ taxa_rentabilidade_anual = st.sidebar.slider(
 taxa_inflacao_anual = st.sidebar.slider(
     "Taxa de Inflação Anual Esperada (%)",
     min_value=0.0,
-    max_value=100.0,
+    max_value=20.0,
     value=4.0,
     step=0.1,
     help="Taxa de inflação anual esperada para ajustar o poder de compra."
