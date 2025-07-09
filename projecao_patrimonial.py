@@ -205,7 +205,7 @@ if st.button("Gerar Projeção Financeira"):
             y=projecao_df["Patrimônio Fim Nominal (c/ Div Reinvestidos) (R\$)"], # Coluna renomeada
             mode="lines+markers",
             name="Patrimônio Nominal (c/ Div Reinvestidos)", # Nome do trace atualizado
-            line=dict(color='blue') # Sugestão de cor para diferenciar
+            line=dict(color='gold') # Sugestão de cor para diferenciar
             ))
 
             # NOVO TRACE: Patrimônio Nominal (SEM Dividendos Reinvestidos)
@@ -214,7 +214,7 @@ if st.button("Gerar Projeção Financeira"):
             y=projecao_df["Patrimônio Fim Nominal (sem Div Reinvestidos) (R\$)"], # Nova coluna
             mode="lines+markers",
             name="Patrimônio Nominal (sem Div Reinvestidos)", # Novo nome
-            line=dict(dash='dash', color='orange') # Sugestão para linha tracejada e cor diferente
+            line=dict(dash='dash', color='red') # Sugestão para linha tracejada e cor diferente
             ))
 
             # Trace para Patrimônio Real (já existente)
